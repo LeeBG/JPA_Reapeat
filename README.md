@@ -1,6 +1,7 @@
 # JPA 그룹 스터디 저장소
 
-![image](https://github.com/LeeBG/JPA_Reapeat/assets/44068819/55239c0b-31fa-4ecc-8e49-188139a547b5)
+![전원주](https://github.com/LeeBG/JPA_Reapeat/assets/112646719/4da59676-7ef0-4f26-b5f5-c23d4963d496)
+
 
 
 # 스터디
@@ -18,6 +19,7 @@
   - 
 
 ## 📌 기술 스택
+![노진구](https://github.com/LeeBG/JPA_Reapeat/assets/112646719/cd6783c6-cad3-479f-b0d2-180b52174e22)
 
 <img src="https://img.shields.io/badge/Java-437291?style=for-the-badge&logo=OpenJDK&logoColor=black"/>
 <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
@@ -33,7 +35,7 @@
 |  01  | 2일차  |    엔티티 매핑, 연관관계 매핑 기초    | [바로가기][day02] |
 |  02  | 3일차  |  다양한 연관관계 매핑 + 고급매핑  | [바로가기][day03] |
 |  03  | 4일차  |  | [바로가기][day04] |
-|  04  | 5일차  |      | [바로가기][day05] |
+|  04  | 5일차  |      | [바로가기][cex] |
 |  05  | 6일차  |          | [바로가기][day06] |
 |  06  | 7일차  |     | [바로가기][day07] |
 |  07  | 8일차  |           | [바로가기][day08] |
@@ -46,7 +48,7 @@
 
 | 번호 | 일차 | 내용 |    소스코드     |
 | :--: | :--: | :--: | :-------------: |
-|  00  |  -   |  -   | [바로가기][etc] |
+|  00  |  -   |  -   | [바로가기][cex] |
 
 ## 공부하면서 참고한 사이트
 
