@@ -29,6 +29,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-devtools' // restart
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
  	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
