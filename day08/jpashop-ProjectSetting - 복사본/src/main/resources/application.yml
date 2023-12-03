@@ -4,13 +4,9 @@ spring:
     username: c##itbank
     password: it
     driver-class-name: oracle.jdbc.OracleDriver
-#  thymeleaf:
-#    prefix: classpath:/templates/
-#    suffix: .html
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
 
   jpa:
     hibernate:
