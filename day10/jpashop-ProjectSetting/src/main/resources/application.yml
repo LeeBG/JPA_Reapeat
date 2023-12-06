@@ -16,11 +16,15 @@ spring:
 #        show_sql: true # System.out에 하이버네이트 실행 SQL을 남긴다
         format_sql: true # SQL 쿼리 정렬해서 알아보기 좋게 정렬한다.
         default_batch_fetch_size: 1000 # 글로벌로 fetch사이즈를 걸어버린다.
-    open-in-view: true # 이게 뭔지 알아야한다.
-    # 트래픽이 많은 서비스에서는 이것을 명확히 알아야 장애발생시  극복가능하다.
+    open-in-view: true
+#    open-in-view: false
+
+
+    # OSIV : Open Session In View 이게 뭔지 알아야한다.
+    # 트래픽이 많은 서비스에서는 이것을 명확히 알아야 장애 발생시  극복가능하다.
     # JPA가 영속성 컨텍스트가 있다. DB커넥션을 획득을 언제 하냐면 데이터베이스 트랜잭션 시작할 때,
     # JPA입장에서 트랜잭션 시작할 때 DB 커넥션을 획득
-    # open-in-view가 켜져있으면 @Transactional이 끝나는 시점에서 connection을 반환하지 않는다.
+    # open-in-view가 켜져있으면 @Transactional이 붙은 함수가 끝나는 시점에 connection을 반환하지 않는다.
     # 최초 데이터베이스 커넥션 시작 시점부터 API 응답이 끝날 때 까지 영속성 컨텍스트
     #와 데이터베이스 커넥션을 유지한다는 것이다. 그래서 지금까지 View Template이나 API 컨트롤러에서 지연 로딩이 가능했던
     #것이다.
@@ -29,6 +33,7 @@ spring:
 
     # true 했을 때 단점 : 이 전략은 너무 오랜시간동안 데이터베이스 커넥션 리소스를 사용하기 때문에, 실시간 트래픽이 중요한
     #애플리케이션에서는 커넥션이 모자랄 수 있다. 이것은 결국 장애로 이어진다.
+
 
 logging:
   level:
