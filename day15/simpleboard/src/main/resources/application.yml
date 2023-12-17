@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:oracle:thin:@minijsp_high?TNS_ADMIN=C:/Wallet_MiniJsp
+    username: admin
+    password: Group00000@@
+    driver-class-name: oracle.jdbc.OracleDriver
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+#        show_sql: true
+        format_sql: true
+server:
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    org.hibernate.SQL: debug
